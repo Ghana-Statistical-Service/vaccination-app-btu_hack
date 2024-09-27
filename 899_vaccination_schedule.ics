@@ -1,0 +1,34 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:This is a vaccination reminder for BCG\, OPV\, Hepatitis B
+DTSTART:20150327T000000Z
+SUMMARY:BCG\, OPV\, Hepatitis B for 899
+UID:2274d36c-2705-4519-91b3-09cf96071156@2274.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:This is a vaccination reminder for Pentavalent 3\, OPV 3\, PCV 3\, IPV
+DTSTART:20150703T000000Z
+SUMMARY:Pentavalent 3\, OPV 3\, PCV 3\, IPV for 899
+UID:5fb35287-8826-4717-978a-bcb61ccc4fc7@5fb3.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:This is a vaccination reminder for Measles\, Yellow Fever\, Men A
+DTSTART:20151204T000000Z
+SUMMARY:Measles\, Yellow Fever\, Men A for 899
+UID:6b1b9dd5-a4bf-4ed5-8f5f-8c3d42b86cc6@6b1b.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:This is a vaccination reminder for Pentavalent 2\, OPV 2\, PCV 2\, RV 2
+DTSTART:20150605T000000Z
+SUMMARY:Pentavalent 2\, OPV 2\, PCV 2\, RV 2 for 899
+UID:f9dbc137-4462-40ac-996b-9ce6aa727ef4@f9db.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:This is a vaccination reminder for Pentavalent 1\, OPV 1\, PCV 1\, RV 1
+DTSTART:20150508T000000Z
+SUMMARY:Pentavalent 1\, OPV 1\, PCV 1\, RV 1 for 899
+UID:459aadda-1ba3-47eb-bace-97178f938a34@459a.org
+END:VEVENT
+END:VCALENDAR

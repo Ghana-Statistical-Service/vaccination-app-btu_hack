@@ -1,0 +1,34 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:This is a vaccination reminder for Pentavalent 1\, OPV 1\, PCV 1\, RV 1
+DTSTART:20241105T000000Z
+SUMMARY:Pentavalent 1\, OPV 1\, PCV 1\, RV 1 for Golsa
+UID:33357d86-5a57-4b92-a0da-ffb36541184b@3335.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:This is a vaccination reminder for BCG\, OPV\, Hepatitis B
+DTSTART:20240924T000000Z
+SUMMARY:BCG\, OPV\, Hepatitis B for Golsa
+UID:93e013d1-a16f-47e9-8f2c-508b10e24661@93e0.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:This is a vaccination reminder for Pentavalent 2\, OPV 2\, PCV 2\, RV 2
+DTSTART:20241203T000000Z
+SUMMARY:Pentavalent 2\, OPV 2\, PCV 2\, RV 2 for Golsa
+UID:59f07a25-aa6d-43e5-8caf-f4b345f25f91@59f0.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:This is a vaccination reminder for Measles\, Yellow Fever\, Men A
+DTSTART:20250603T000000Z
+SUMMARY:Measles\, Yellow Fever\, Men A for Golsa
+UID:9bfe0f28-8423-4bd0-be2f-61e1076a77ce@9bfe.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:This is a vaccination reminder for Pentavalent 3\, OPV 3\, PCV 3\, IPV
+DTSTART:20241231T000000Z
+SUMMARY:Pentavalent 3\, OPV 3\, PCV 3\, IPV for Golsa
+UID:3f2370b4-bdb9-4279-ad21-d0f04afcab32@3f23.org
+END:VEVENT
+END:VCALENDAR

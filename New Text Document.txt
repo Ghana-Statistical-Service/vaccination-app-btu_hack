@@ -1,0 +1,5 @@
+pip install ics
+
+python -c "import ics"
+
+python app.py
