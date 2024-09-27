@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaccination Schedule: Team Golsa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #4a90e2;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px 0;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        small {
+            display: block;
+            margin-top: 5px;
+            color: #777;
+        }
+
+        h2 {
+            margin-top: 30px;
+            color: #333;
+        }
+
+        form {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        input[type="submit"] {
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #357ab8;
+        }
+
+        button {
+            background-color: #e94e77;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #d43f6b;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #4a90e2;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vaccination Schedule for {{ child_name }}</h1>
+    <ul>
+    {% for vaccine, date in schedule.items() %}
+        <li>{{ vaccine }}: {{ date.strftime('%Y-%m-%d') }} <br>
+        <small>{{ vaccination_relevance[vaccine] }}</small></li>
+    {% endfor %}
+    </ul>
+
+    <h2>Options:</h2>
+    <form action="{{ url_for('send_email') }}" method="POST">
+        <input type="hidden" name="child_name" value="{{ child_name }}">
+        <input type="hidden" name="mother_email" value="{{ request.form['mother_email'] }}">
+        <input type="hidden" name="dob" value="{{ request.form['dob'] }}">
+        <input type="submit" value="Send as Calendar to Email">
+    </form>
+
+    <button onclick="readPage()">Read Page Aloud</button>
+
+    <a href="/">Go Back</a>
+
+    <script>
+        function readPage() {
+            var text = document.body.innerText;
+            var msg = new SpeechSynthesisUtterance(text);
+            window.speechSynthesis.speak(msg);
+        }
+    </script>
+</body>
+</html>

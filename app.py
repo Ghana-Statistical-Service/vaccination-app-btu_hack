@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render, request, redirect, url_for
 import datetime
 from ics import Calendar, Event
 import smtplib
@@ -61,7 +61,7 @@ def send_email_with_calendar(mother_email, child_name, schedule):
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render('index.html')
 
 @app.route('/submit', methods=['POST'])
 def submit():
@@ -73,7 +73,7 @@ def submit():
 
     schedule = calculate_vaccination_schedule(dob)
 
-    return render_template(
+    return render(
         'schedule.html', 
         child_name=child_name, 
         schedule=schedule, 
